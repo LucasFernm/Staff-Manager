@@ -1,0 +1,54 @@
+header {
+  background-color: #68a357;
+  padding: 0.75rem 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar h1 {
+  color: white;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #fff;
+  background-color: #507a43;
+  border-radius: 0.25rem;
+}
+
+footer {
+  background-color: #f7f7f7;
+  color: #507a43;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #507a43;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #68a357;
+  text-decoration: underline;
+}
