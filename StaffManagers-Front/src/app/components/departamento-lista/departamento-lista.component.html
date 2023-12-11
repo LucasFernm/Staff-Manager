@@ -1,0 +1,20 @@
+<div class="departamento-container">
+  <div class="create-bar">
+    <button (click)="adicionarDepartamento()">Criar Departamento</button>
+  </div>
+  <div *ngIf="exibirFormularioModal" class="formulario-departamento">
+    <app-departamento-form [departamento]="departamentoEditando" (fecharFormulario)="fecharModal()"></app-departamento-form>
+  </div>
+  <div class="cards-container">
+    <div class="departamento-card" *ngFor="let departamento of departamentos" (click)="navegarParaFuncionarios(departamento.departamentoId)">
+      <div class="card-content">
+        <h3>{{ departamento.nome }}</h3>
+        <p>{{ departamento.sigla }}</p>
+      </div>
+      <div class="card-actions">
+        <button (click)="editarDepartamento(departamento); $event.stopPropagation()">Editar</button>
+        <button (click)="excluirDepartamento(departamento.departamentoId); $event.stopPropagation()">Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>

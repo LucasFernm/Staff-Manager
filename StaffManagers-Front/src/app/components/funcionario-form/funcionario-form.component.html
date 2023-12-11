@@ -1,0 +1,11 @@
+<div class="form-container">
+  <form [formGroup]="funcionarioForm" (ngSubmit)="salvar()">
+    <input formControlName="nome" type="text" placeholder="Nome do Funcionário">
+    <input formControlName="foto" type="text" placeholder="URL da Foto">
+    <input formControlName="rg" type="text" placeholder="RG do Funcionário">
+    <input formControlName="cargo" type="text" placeholder="Cargo do Funcionário">
+    <input formControlName="dataDeNascimento" type="date">
+    <input formControlName="departamentoId" type="hidden">
+    <button type="submit">Salvar</button>
+  </form>
+</div>
